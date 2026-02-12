@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YouTube Looper (Minimal)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>YouTube Looper</h1>
+
+  <div class="row">
+    <input id="urlInput" placeholder="유튜브 링크를 붙여넣으세요 (예: https://www.youtube.com/watch?v=...)" />
+    <button id="loadBtn">불러오기</button>
+  </div>
+
+  <div class="row">
+    <button id="setBookmarkBtn" disabled>북마크 설정</button>
+    <div class="hint" id="bookmarkInfo">북마크: (아직 없음)</div>
+ 
+    <fieldset style="border: 1px solid #ccc; padding: 8px; display: inline-block;">
+        <legend>루프 설정</legend>
+        <label>
+            BPM 입력:
+            <input id="BPM" type="number" min="1" value="1" />
+        </label>
+        <label>
+            반복하고 싶은 마디 수:
+            <input id="loopBarnum" type="number" min="1" value="1" />
+        </label>
+        <select id="loopSetting">
+            <option value="option1">북마크 이전 마디로 루프</option>
+            <option value="option2">북마크 이후 마디로 루프</option>
+        </select>
+        <br />
+            <button id="loopOn">루프 시작</button>
+            <button id="loopOff">루프 중지</button>
+        <br />
+        
+    </fieldset>
+    
+  </div>
+
+  <div class="hint">
+    ※ 이 페이지는 YouTube IFrame Player API를 사용합니다. (링크에서 videoId를 뽑아 임베드)
+  </div>
+
+  <div id="playerWrap">
+    <div id="player"></div>
+  </div>
+
+  <!-- 1) YouTube IFrame Player API 로드 -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
