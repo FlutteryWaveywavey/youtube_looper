@@ -9,14 +9,28 @@
 <body>
   <h1>YouTube Looper</h1>
 
+  <!-- User guide block -->
+  <section class="user guide" aria-label="Youtube looper 사용 방법" >   
+    <h3>사용 방법</h3>
+    <ol>
+      <li>입력란에 유튜브 링크를 붙여넣고 "불러오기" 버튼을 누릅니다.</li>
+      <li>영상이 로드된 이후 영상을 재생합니다. 루프를 하고 싶은 위치에서 "루프포인트 설정" 버튼을 누릅니다.</li>
+      <li><strong>루프 포인트</strong>는  </li>
+      <li>루프 설정 옵션을 선택합니다.</li>
+      <li>"루프 시작" 버튼을 눌러 루프를 시작합니다. "루프 중지" 버튼으로 루프를 멈출 수 있습니다.</li>
+    </ol>
+  </section>
+
+    <!-- Youtube link input block -->
   <div class="row">
+    <h3>유튜브 링크 입력</h3>
     <input id="urlInput" placeholder="유튜브 링크를 붙여넣으세요 (예: https://www.youtube.com/watch?v=...)" />
     <button id="loadBtn">불러오기</button>
   </div>
 
   <div class="row">
-    <button id="setBookmarkBtn" disabled>북마크 설정</button>
-    <div class="hint" id="bookmarkInfo">북마크: (아직 없음)</div>
+    <button id="setBookmarkBtn" disabled>루프포인트 설정</button>
+    <div class="hint" id="bookmarkInfo">루프포인트: (아직 없음)</div>
  
     <fieldset style="border: 1px solid #ccc; padding: 8px; display: inline-block;">
         <legend>루프 설정</legend>

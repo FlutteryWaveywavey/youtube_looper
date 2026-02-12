@@ -1,18 +1,73 @@
-body { font-family: system-ui, sans-serif; margin: 24px; }
-    .row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
-    #urlInput { padding: 10px; min-width: 380px; max-width: 100%; }
-    #loopBarnum { width: 50px; padding: 5px; }
-    #bookmarkInfo { margin-left: 12px; align-self: center; }
-    #BPM { width: 30px; padding: 5px; }
-    button { padding: 10px 12px; cursor: pointer; }
-    fieldset { flex-basis: 100%; }
-    #playerWrap { margin-top: 12px; max-width: 900px; }
-    #player { width: 100%; aspect-ratio: 16 / 9; background: #000; }
-    .hint { color: #555; font-size: 14px; }
-    label {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        margin-right: 12px;
-        font-size: 12px;
-    }
+body {
+  font-family: system-ui, sans-serif;
+  margin: 24px;
+}
+
+section.user.guide {
+  border: 1px solid #ccc;
+  padding: 8px;
+  display: inline-block;
+  margin-bottom: 24px;  /* 아랫쪽 여백 추가 */
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+#urlInput {
+  padding: 4px;
+  min-width: 350px;
+  max-width: 100%;
+  height: 20px;
+}
+
+#BPM {
+  width: 30px;
+  padding: 5px;
+}
+
+#loopBarnum {
+  width: 50px;
+  padding: 5px;
+}
+
+#bookmarkInfo {
+  margin-left: 12px;
+  align-self: center;
+}
+
+button {
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+fieldset {
+  flex-basis: 100%;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 12px;
+  font-size: 12px;
+}
+
+.hint {
+  color: #555;
+  font-size: 14px;
+}
+
+#playerWrap {
+  margin-top: 12px;
+  max-width: 900px;
+}
+
+#player {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
